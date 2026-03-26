@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+nav {
+    background: #353434;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #6C63FF;
+    color: white;
+}
+
+.hero img {
+    border-radius: 50%;
+}
+
+/* Tentang Saya */
+.about {
+    padding: 40px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress {
+    background: #ddd;
+    height: 15px;
+}
+
+.progress div {
+    background: #6C63FF;
+    height: 100%;
+}
+
+/* Sertifikat */
+.cert {
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 20px;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
